@@ -1,73 +1,136 @@
-body{
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+html {
     box-sizing: border-box;
+    font-size: 100%;
 }
 
-main {
-    padding: 0px 50px 0px 50px;
+*, *:before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+.main-content h2{
+    color: white;
+    font-size: 30px;
+    background-color: #fb4d4d;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #a63434;
+}
+
+#first-heading {
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 150px 0 150px 0;
+    font-size: 40px;
+    background-color: #842929;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body {
-    background-color: rgb(253, 201, 182);
+    background-color: #ffead1;
+    color: #ffffff;
+    font-family: Open-Sans, Helvetica, sans-serif;
 }
 
-img {
-    border-radius: 30px;
-    margin: 10px;
-    border: 6px solid #ff7878;
+section, aside, div {
+    padding: 20px;
 }
 
-header, h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 60px;
-    background-color: #1d1d1d;
-    margin: 0;
-    padding: 50px 0 50px 0;
-    color: pink;
+.text-section {
+    padding: 30px;
+    color: #101010;
+    letter-spacing: 1px;
 }
 
-header p {
-    font-size: 35px;
+
+.flex-container { 
+    @media (min-width: 56.25em){
+        display: flex;
+    }
 }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+.main-content {
+    flex: 1;
+    background-color: #ffead1;
+    padding: 0px;
+    margin-right: 20px;
 }
 
-p {
-    font-family: sans-serif;
-    font-size: 25px;
-}
 
-ul, li, ol {
-    font-family: sans-serif;
+.main-content section {
+    background-color: #ffead1;
+    padding: 0px;
     font-size: 20px;
 }
 
+.sidebar h2{
+    background-color: #fb4d4d;
+    padding: 15px 0 15px 0;
+    margin: 0 0 0 0 ;
+}
+
+.sidebar{
+    flex: 0 0 300px;
+    text-align: center;
+    background-color: #ffead1;
+    border-left: 5px solid #842929;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+;}
+
 a {
-    color: hsl(0, 0%, 16%);
-    font-weight: 600;
     text-decoration: none;
-    font-family: sans-serif;
+    color: #fb4d4d;
+    font-weight: 800;
+}
+
+ul li{
+    margin-top: 20px;
+}
+
+ol li {
+    margin-top: 20px;
+}
+
+ul li::marker {
+    color: #fb4d4d;
+}
+
+ol li::marker {
+    color: #fb4d4d;
+    font-weight: 800;
+}
+
+.sidebar p {
+    color: black;
+}
+
+.gallery-container{
+    max-width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#bio-section {
+    background-color: pink;
+    padding: 25px;
 }
 
 footer {
-    text-align: center;
-    padding: 150px 0px 150px 0px;
-    background-color: hsl(0, 100%, 67%);
-    margin-top: 100px;
-
-}
-
-main h2 {
-    background-color: rgb(62, 62, 62);
     color: white;
-    padding: 10px 0px 10px 10px;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    background-color: #842929;
+    font-size: 20px;
 }
 
-#copyright {
-    font-size: 15px;
+a img {
+    width: 140px;
+    border-radius: 100%;
 }
