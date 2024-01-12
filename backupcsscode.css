@@ -151,16 +151,3 @@ a img {
     width: 140px;
     border-radius: 100%;
 }
-
-.sidebar {
-    position: relative;
-}
-
-.bio {
-    position: sticky;
-    top: 20px;
-    z-index: 2;
-    background-color: #ffead1;
-    padding: 20px;
-
-}
