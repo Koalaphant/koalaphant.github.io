@@ -152,6 +152,10 @@ a img {
     border-radius: 100%;
 }
 
+a:hover {
+    color: darkred;
+}
+
 .sidebar {
     position: relative;
 }
